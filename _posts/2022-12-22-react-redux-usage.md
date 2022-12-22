@@ -3,7 +3,7 @@ layout: single
 classes: wide
 title: "[22.12.22] JavaScript에서 Redux 사용해보기"
 categories: TIL
-tag: [React, Redux]
+tag: [JavaScript, Redux]
 toc: true
 author_profile: false
 sidebar:
