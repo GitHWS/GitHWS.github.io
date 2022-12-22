@@ -269,3 +269,4 @@ defaults:
       share: true
       related: true
       show_date: true
+      read_time: false

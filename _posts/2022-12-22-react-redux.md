@@ -8,7 +8,6 @@ toc: true
 author_profile: false
 sidebar:
   nav: "docs"
-search: false
 ---
 
 ## Redux란 무엇인가?
