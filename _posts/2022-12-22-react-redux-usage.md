@@ -166,3 +166,24 @@ store.subscribe(counterSubscriber);
 store.dispatch({ type: "INCREMENT" });
 store.dispatch({ type: "DECREMENT" });
 ```
+
+## TIL 핵심 정리
+
+#### JavaScript의 환경에서의 Redux 사용
+
+- 저장소를 생성
+	: 생성한 저장소의 `createStore()` 메서드를 사용하여 생성한다. `createStore()` 메서드의 인자로는 저장소의 데이터를 업데이트시킬 Reducer 함수를 넣는다.
+
+- Reducer 함수 생성
+	: Reducer 함수는 매개변수 `state`와 `action`을 가진다.
+	첫번째 매개변수 `state`는 기존의 state를 의미하며 가장 처음엔 기본값이 설정된다.
+	두번째 매개변수 `action`은 Dispatch된 action 객체로 type 프로퍼티의 값을 통해 Reducer 함수에서 어떤 작업을 수행할지 결정하는 객체이다.
+
+- 저장소의 값을 가져오기(구독 함수 생성하기)
+	: 저장소의 `getState()` 메서드를 호출하여 저장소의 전체 데이터를 가져올 수 있다.
+
+- Redux에게 구독 함수 인식시키기
+	: Redux에게 구독 함수를 인식시키려면 저장소의 `subscribe()` 메서드를 사용하여 구독시킬 수 있다. 이 메서드에 인자로 구독 함수가 들어가야한다.
+
+- Reducer 함수에게 Dispatch한 action 객체 전달하기
+	: 저장소의 `dispatch()` 메서드로 type 프로퍼티가 있는 action 객체를 전달한다. 전달하면 Reducer 함수가 데이터 업데이트 작업을 수행하면서 새로운 State 값을 반환한다. 
