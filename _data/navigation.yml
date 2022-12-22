@@ -8,18 +8,14 @@ main:
     url: /search/
 
 docs:
-  - title: "INDEX1"
+  - title: "INDEX"
     children:
       - title: "Category"
         url: /categories/
       - title: "Tag"
         url: /tags/
-  - title: "INDEX2"
-    children:
-      - title: "Category"
-        url: /categories/
-      - title: "Tag"
-        url: /tags/
+      - title: "TIL"
+      - url: /til/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
