@@ -20,7 +20,7 @@ title                    : "GitHWS"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Hyunwoo Shin"
-description              : "모든 것이 재미있는 개발자가 될거야!"
+description              : "나만의 기록을 남기는 블로그입니다."
 url                      : "https://GitHWS.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -106,13 +106,13 @@ analytics:
 author:
   name             : "Hyunwoo Shin"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "모든 것이 재미있는 개발자가 될거야!"
   location         : "Busan, Republic of Korea"
-  email            :
+  email            : "gitcodehw@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:gitcodehw@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
