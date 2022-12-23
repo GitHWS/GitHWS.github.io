@@ -50,6 +50,8 @@ class Counter extends React.Component{
 export default Counter;
 ```
 
+### Redux 저장소에 구독하기
+
 가장 처음으로 이 컴포넌트가 Redux의 저장소에 구독을 하도록 설정해야한다.
 그러기 위해선 `react-redux` 패키지에서 `connect` 함수를 가져온다.
 
@@ -75,6 +77,7 @@ export default connect()(Counter);
 
 > 이 두개의 매개변수는 `connect` 함수 다음에 호출되는 함수의 매개변수인 Counter 컴포넌트의 `props`가 된다. 
 
+#### connect 함수의 매개변수
 
 우선 첫번째 매개변수인 **저장소의 데이터 추출을 위한 함수**를 생성해보자.
 이 함수가 반환하는 객체는 **저장소의 모든 데이터를 가져와서 원하는 데이터만 추출한 데이터**이다.
@@ -116,6 +119,8 @@ const Counter = { counter, increment, decrement } => {
   // ...
 }
 ```
+
+#### 얻은 Props 사용
 
 그럼 이제 위의 과정을 통해 얻은 props를 사용해보자.
 여기서 생각해야할 점은 우리는 아직 Redux 저장소를 구독한다는 코드를 작성하지 않았다. 근데 저장소의 데이터를 가져올 수 있다.
@@ -159,6 +164,8 @@ class Counter extends React.Component{
   }
 }
 ```
+
+#### 실행 결과
 
 위처럼 코드를 완성하면 함수형인 Counter 컴포넌트의 동일하게 동작하는 것을 알 수 있다.
 
