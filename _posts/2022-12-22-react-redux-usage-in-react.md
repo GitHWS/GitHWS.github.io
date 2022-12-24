@@ -82,27 +82,6 @@ const counterReducer = (state = { counter: 0 }, action) => {
 const store = createStore(counterReducer);
 ```
 
-#### 만약 페이로드를 추가하고 싶다면?
-
-만약 추가적인 페이로드를 추가하고 싶다면 전달하는 `action`객체에 프로퍼티로 `key`와 `value`를 추가하고 Reducer 함수에서 반환값에서 `action` 객체에 접근하여 사용하면 된다.
-
-```js
-// Reducer 함수
-const counterReducer = (state = { counter: 0 }, action) => {
-  // 만약 5씩 카운터가 증가하는 기능이라면 아래처럼 페이로드를 추가한다.
-  if (action.type === "INCREMENTBY5") {
-    return { counter: state.counter + action.amount };
-  }
-
-  // ...
-};
-
-// dispatch하는 action 객체
-const incrementHandler = () => {
-  dispatch({ type: "INCREMENT", amount: 5 });
-};
-```
-
 ### React 앱과 Redux 저장소를 제공하기
 
 Redux의 저장소가 만들어졌으니 이제 React 앱과 Redux를 연결해보자.
@@ -387,6 +366,27 @@ const counterReducer = (state = { counter: 0 }, action) => {
   }
 
   return state;
+};
+```
+
+### 추가) 만약 페이로드를 추가하고 싶다면?
+
+만약 추가적인 페이로드를 추가하고 싶다면 전달하는 Reducer에 전달할 `action`객체에 프로퍼티로 추가하고 Reducer 함수에서 반환값에서 `action` 객체에 접근하여 사용하면 된다.
+
+```js
+// Reducer 함수
+const counterReducer = (state = { counter: 0 }, action) => {
+  // 만약 5씩 카운터가 증가하는 기능이라면 아래처럼 페이로드를 추가한다.
+  if (action.type === "INCREMENTBY5") {
+    return { counter: state.counter + action.amount };
+  }
+
+  // ...
+};
+
+// dispatch하는 action 객체
+const incrementHandler = () => {
+  dispatch({ type: "INCREMENT", amount: 5 });
 };
 ```
 
