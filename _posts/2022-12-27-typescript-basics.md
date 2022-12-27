@@ -86,13 +86,13 @@ function add(a: number, b: number) {
   return a + b;
 }
 
-// 컴파일 단계에서 지정한 자료형을 확인하여 올바르게 number 타입의 값이 전달하면
+// 컴파일 단계에서 지정한 자료형을 확인하여 올바르게 number 타입의 값이 전달하면?
 const result = add(2, 5);
 
 console.log(result); // 7
 ```
 
-단 매개변수로 다른 타입이 들어가면 컴파일 에러가 발생하게 된다.
+하지만 만약 매개변수로 다른 타입이 들어가면 컴파일 에러가 발생하게 된다.
 
 ```js
 const result = add("2", "5"); // 컴파일 에러 발생
