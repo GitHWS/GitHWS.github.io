@@ -189,6 +189,8 @@ function print(value: any) {
   <img src="https://user-images.githubusercontent.com/96808980/209829001-e44e4e69-14cb-413b-8f67-d38ecd857ea0.png" alt=""/>
 </p>
 
+<br/>
+
 ### 제네릭(Generic)
 
 > 나는 내가 이해한 대로 작성을 해보고 추후에 수정하는 식으로 작성을 하려고 한다.
