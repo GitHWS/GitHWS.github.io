@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: "[22.12.30] React 프로젝트에 TypeScript를 우당탕탕 적용하기(1)"
+title: "[22.12.29] React 프로젝트에 TypeScript를 우당탕탕 적용하기(1)"
 categories: TIL
 tag: [TypeScript, toy]
 toc: true
