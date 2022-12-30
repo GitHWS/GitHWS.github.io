@@ -114,7 +114,7 @@ export default Todos;
 
 <br />
 
-### 마무리
+## 마무리
 
 이번에 처음 사용해본 React + TypeScript 토이 프로젝트였는데 생각보다 많이 헷갈렸던 부분이 많았던 것 같다.
 
