@@ -164,3 +164,7 @@ const [active, setActive] = useState(0);
 이것은 `active` state의 값이 0, 1, 2일 때 `&&` 연산자를 통해 버튼에 해당하는 목록을 가진 컴포넌트를 렌더링하는 방식이다.
 
 지금은 렌더링할 데이터가 없어 `div` 태그를 임시로 이용했다.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/96808980/214561141-b9f9add8-7079-4e7c-a999-65898093820d.gif" alt="탭 메뉴에 따라 바뀌는 컨텐츠"/>
+</p>
