@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: "[23.02.04] 불필요한 렌더링 해결하기"
+title: "[23.02.04] 불필요한 리렌더링 해결하기"
 categories: TIL
 tag: [React, Project, UI]
 toc: true
@@ -165,6 +165,22 @@ export default TabMenu;
 <br/>
 
 #### 결과
+
+아래처럼 `ReadMyPocket` 컴포넌트에 배치하여 마무리를 하였다.
+
+```ts
+const ReadMyPocket = () => {
+  return (
+    <>
+      <PageDescParagraph>받은 복주머니</PageDescParagraph>
+      {/* 탭 메뉴와 받은 복주머니 리스트 컴포넌트 */}
+      <TabMenu />
+    </>
+  );
+};
+
+export default ReadMyPocket;
+```
 
 React Dev 툴을 이용하여 렌더링 상황을 살펴보면 아래처럼 리렌더링이 필요한 부분만 변경되는 것을 볼 수 있다.
 
