@@ -2,7 +2,7 @@
 layout: single
 classes: wide
 title: "[23.01.27] 1월 넷째 주 회고"
-categories: TIL
+categories: WIL
 tag: [회고]
 toc: true
 author_profile: false
