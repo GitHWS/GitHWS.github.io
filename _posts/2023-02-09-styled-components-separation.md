@@ -257,7 +257,7 @@ const LetterContent = ({ color }: { color: string }) => {
 
 이 작업으로 필요없는 리소스를 제거하는데 시간을 소요하기에 되도록이면 필요한 리소스만 가져와서 사용하는 것이 성능면에서 좋다고 한다.
 
-> 더 `tree-shaking`의 자세한 내용은 아래의 링크에서 읽어봤다!
+> 더 `tree-shaking`의 자세한 내용은 아래의 링크에서 읽어봤다!<br/>
 > 출처 : [트리쉐이킹으로 자바스크립트 사이즈 줄이기](https://yceffort.kr/2021/08/javascript-tree-shaking)
 
 하지만 이 프로젝트는 매우 소규모이기 때문에 현재로선 문제가 없어 유지하기로 했다.
