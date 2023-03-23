@@ -14,8 +14,6 @@ sidebar:
 
 # 공통 Input 컴포넌트 어떻게 구성해야할까?
 
-Input 컴포넌트를
-
 ### 공통 Input 컴포넌트에 필요한 컴포넌트(태그)들
 
 - `div` : `label`과 `input` 또는 `textarea`를 묶어 두 줄로 레이아웃을 구현하기 위해 필요
