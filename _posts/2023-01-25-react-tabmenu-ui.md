@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: "[23.01.25] React로 탭메뉴 UI 구현하기"
+title: "React로 탭메뉴 UI 구현하기"
 categories: TIL
 tag: [React, Project, UI]
 toc: true

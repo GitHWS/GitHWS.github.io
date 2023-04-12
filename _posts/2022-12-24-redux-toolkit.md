@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: "[22.12.24] Redux Toolkit을 사용하는 이유"
+title: "Redux Toolkit을 사용하는 이유"
 categories: TIL
 tag: [React, Redux, Redux-toolkit]
 toc: true

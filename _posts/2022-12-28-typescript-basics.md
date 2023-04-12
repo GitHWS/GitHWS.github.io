@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: "[22.12.28] TypeScript 설치와 타입 지정"
+title: "TypeScript 설치와 타입 지정"
 categories: TIL
 tag: [TypeScript]
 toc: true

@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: "[22.12.27] TypeScript란 무엇인가?"
+title: "TypeScript란 무엇인가?"
 categories: TIL
 tag: [TypeScript]
 toc: true

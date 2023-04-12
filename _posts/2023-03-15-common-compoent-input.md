@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: "[23.03.15] 공통 Input 컴포넌트 구성을 어떻게 해야할까?"
+title: "공통 Input 컴포넌트 구성을 어떻게 해야할까?"
 categories: TIL
 tag: [React, Styled-components, react-hook-form]
 toc: true

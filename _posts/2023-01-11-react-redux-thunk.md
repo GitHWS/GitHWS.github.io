@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: "[23.01.11] Redux-toolkit Thunk로 비동기 처리하기!"
+title: "Redux-toolkit Thunk로 비동기 처리하기!"
 categories: TIL
 tag: [React, Redux-toolkit, Thunk, 비동기, toy]
 toc: true

@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: "[23.02.11] 지저분한 JSX 수정하기 및 데이터가 없을 때 메세지 렌더링하기"
+title: "지저분한 JSX 수정하기 및 데이터가 없을 때 메세지 렌더링하기"
 categories: TIL
 tag: [React, Project]
 toc: true

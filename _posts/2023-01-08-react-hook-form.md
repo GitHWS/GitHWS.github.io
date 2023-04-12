@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: "[23.01.08] React-hook-form을 이용한 간단한 로그인 구현하기"
+title: "React-hook-form을 이용한 간단한 로그인 구현하기"
 categories: TIL
 tag: [React, React-Hook-Form, toy]
 toc: true

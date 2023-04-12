@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: "[22.12.23] bind() 메서드"
+title: "bind() 메서드"
 categories: TIL
 tag: [JavaScript]
 toc: true
@@ -11,7 +11,6 @@ sidebar:
 ---
 
 ## bind() 메서드는 무엇인가?
-
 
 ### bind() 메서드의 정의
 
@@ -40,7 +39,7 @@ func.bind(thisArg[, arg1[, arg2[, ...]]])
 '모던 자바스크립트 Deep Dive'의 예제를 살펴보면서 정리해보도록 하자.
 
 ```js
-function getThisBinding(){
+function getThisBinding() {
   return this;
 }
 ```
@@ -48,7 +47,7 @@ function getThisBinding(){
 `getThisBinding`이라는 함수는 `this`를 반환하는데 여기서 `this`는 전역에 위치하는 함수로서 `window` 객체가 된다.
 
 ```js
-const thisArg = { a : 1 };
+const thisArg = { a: 1 };
 ```
 
 하지만 우리는 `thisArg`를 `this`로 설정해서 사용하고 싶다.
@@ -62,6 +61,7 @@ console.log(getThisBinding.bind(thisArg)); // this가 thisArg로 바인딩된 ge
 예제에서는 `getThisBinding.bind(thisArg)`가 새로운 바인딩된 함수를 반환하고 이어서 뒤에 있는 `()`로 인해 호출되게 된다.
 
 결과를 보면 `getThisBinding`의 호출로 인해 반환되는 값인 `this`가 `thisArg` 값으로 성공적으로 바인딩된 것을 볼 수 있다.
+
 ```js
 console.log(getThisBinding.bind(thisArg)()); // { a : 1 }
 ```
@@ -74,19 +74,19 @@ console.log(getThisBinding.bind(thisArg)()); // { a : 1 }
 
 ```js
 const person = {
-  name: 'Lee',
-  foo(callback){
-    setTimout(callback, 100)
-  }
-}
+  name: "Lee",
+  foo(callback) {
+    setTimout(callback, 100);
+  },
+};
 
-person.foo(function(){
+person.foo(function () {
   console.log(`Hi, my name is ${this.name}.`);
-})
+});
 ```
 
 우선 `person` 객체의 `this`는 `person`을 가리킨다.
-하지만 `person.foo`의 콜백 함수가 일반 함수로 호출되면서 `this`는 전역 객체인 `window`를 가리키게 된다. 
+하지만 `person.foo`의 콜백 함수가 일반 함수로 호출되면서 `this`는 전역 객체인 `window`를 가리키게 된다.
 두 경우의 `this`는 일치하지 않는다. 이렇게 일치하지 않으면 문백상 문제가 발생한다.
 
 따라서 우리는 생각하지 않던 결과인 `'Hi, my name is .'`가 로그에 출력되게 된다.
@@ -96,18 +96,17 @@ person.foo(function(){
 ```js
 // person.foo 메서드가 매개변수로 받은 callback 함수를 바인딩하여 사용할 this를 설정했다.
 const person = {
-  name: 'Lee',
-  foo(callback){
+  name: "Lee",
+  foo(callback) {
     // 새로운 바인딩된 함수를 반환한다. 이 반환된 함수는 100밀리초 후 실행된다.
-    setTimout(callback.bind(person), 100)
-  }
-}
+    setTimout(callback.bind(person), 100);
+  },
+};
 
-person.foo(function(){
+person.foo(function () {
   console.log(`Hi, my name is ${this.name}.`);
-})
+});
 ```
 
 `bind()` 메서드를 사용하여 매개변수로 들어오는 모든 콜백 함수의 `this`를 `person` 객체로 설정하여 `this`를 일치시켰다.
 이로서 결과는 성공적으로 `Hi, my name is Lee.`가 출력이 된다.
-

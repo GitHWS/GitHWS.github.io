@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: "[22.12.22] JavaScript에서 Redux 사용해보기"
+title: "JavaScript에서 Redux 사용해보기"
 categories: TIL
 tag: [JavaScript, Redux]
 toc: true

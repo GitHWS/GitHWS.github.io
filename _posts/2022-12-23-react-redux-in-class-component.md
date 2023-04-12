@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: "[22.12.23] 클래스형 컴포넌트에서 Redux 사용해보기"
+title: "클래스형 컴포넌트에서 Redux 사용해보기"
 categories: TIL
 tag: [React, Redux]
 toc: true

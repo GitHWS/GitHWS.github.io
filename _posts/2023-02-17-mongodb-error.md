@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: "[23.02.17] Attempted to check out a connection from closed connection pool 에러"
+title: "Attempted to check out a connection from closed connection pool 에러"
 categories: TIL
 tag: [React, Node, Express, MongoDB]
 toc: true

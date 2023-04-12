@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: "[22.12.26] 여러 Slice를 사용해보기"
+title: "여러 Slice를 사용해보기"
 categories: TIL
 tag: [React, Redux, Redux-toolkit]
 toc: true

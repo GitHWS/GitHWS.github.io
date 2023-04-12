@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: "[22.12.22] Redux란?"
+title: "Redux란?"
 categories: TIL
 tag: [React, Redux]
 toc: true
@@ -51,8 +51,7 @@ Cross-Component와 App-Wide에서 데이터를 넣고 전체 `props`를 업데�
 <AuthProvider>
   <ThemeProvider>
     <UserInputProvider>
-      <ModalDisplayProvider>
-      </ModalDisplayProvider>
+      <ModalDisplayProvider></ModalDisplayProvider>
     </UserInputProvider>
   </ThemeProvider>
 </AuthProvider>
@@ -65,7 +64,6 @@ Context는 **저빈도의 업데이트에서 매우 좋은 선택**이나 **데�
 또한 Context는 `Provider`를 설정한 영역에만 사용이 가능하기 때문에 **유동적인 State 전파(Propagation)를 사용하기가 번거롭다.**
 
 그에 반해 **Redux는 매우 유동적인 상태 관리 라이브러리**이다.
-
 
 ## Redux의 동작 방식 ⚙️
 
@@ -81,7 +79,6 @@ Redux는 **하나의 중앙 데이터 저장소**이다.
   <img src="https://user-images.githubusercontent.com/96808980/209135839-fc3a8a5f-28d8-43db-b7ef-03a500c3e4e7.png" alt="" width="400px"/>
 </p>
 
-
 ### 2. 저장소와 컴포넌트의 연결(Subscribe)
 
 다음 이 저장소를 **컴포넌트가 구독(Subscribe)**하여 데이터가 변경될 때마다 저장소가 컴포넌트에게 알려준다.
@@ -91,7 +88,6 @@ Redux는 **하나의 중앙 데이터 저장소**이다.
 <p style="text-align:center">
   <img src="https://user-images.githubusercontent.com/96808980/209135857-7e2e59d5-c8f3-4822-9dd1-ca29362a44fc.png" alt="" width="400px"/>
 </p>
-
 
 ### 3. 저장소의 데이터를 업데이트하는 Reducer 함수
 
@@ -104,7 +100,6 @@ Redux의 **저장소의** **데이터 업데이트를 위해** `Reducer함수`**
 <p style="text-align:center">
   <img src="https://user-images.githubusercontent.com/96808980/209135873-6263d90d-8d10-41e4-996d-d65fe14f1b6f.png" alt="" width="400px"/>
 </p>
-
 
 ### 4. Reducer 함수에게 수행할 작업을 알려주기(Dispatch, action 객체)
 

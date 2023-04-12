@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: "[23.02.04] 불필요한 리렌더링 해결하기"
+title: "불필요한 리렌더링 해결하기"
 categories: TIL
 tag: [React, Project, UI]
 toc: true

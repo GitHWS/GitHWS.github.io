@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: "[23.02.09] Style-components 컴포넌트를 별도의 파일로 분리하기"
+title: "Style-components 컴포넌트를 별도의 파일로 분리하기"
 categories: TIL
 tag: [React, Project, Styled-components]
 toc: true

@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: "[22.12.25] Redux Toolkit 사용하기"
+title: "Redux Toolkit 사용하기"
 categories: TIL
 tag: [React, Redux, Redux-toolkit]
 toc: true

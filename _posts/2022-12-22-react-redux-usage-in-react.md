@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: "[22.12.22] React에서 Redux 사용해보기"
+title: "React에서 Redux 사용해보기"
 categories: TIL
 tag: [React, Redux]
 toc: true

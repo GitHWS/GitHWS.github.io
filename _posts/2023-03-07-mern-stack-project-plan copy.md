@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: "[23.03.07] MERN 스택 프로젝트 계획하기"
+title: "MERN 스택 프로젝트 계획하기"
 categories: TIL
 tag: [React, Node, Express, MongoDB]
 toc: true

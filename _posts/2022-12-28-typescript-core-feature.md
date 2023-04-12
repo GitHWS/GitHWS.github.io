@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: "[22.12.28] TypeScript의 핵심 기능"
+title: "TypeScript의 핵심 기능"
 categories: TIL
 tag: [TypeScript]
 toc: true
