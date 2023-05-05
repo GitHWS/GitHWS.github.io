@@ -10,8 +10,6 @@ sidebar:
   nav: "docs"
 ---
 
-같은 이슈 https://github.com/facebook/create-react-app/issues/13080
-
 기존 create-react-app으로 생성한 프로젝트에 TypeScript를 적용하려고 [create-react-app Docs](https://create-react-app.dev/docs/adding-typescript/)의 지시에 따라 진행하였다.
 
 아래와 같은 코드를 입력하여 dependency 설치를 시작하였다.
