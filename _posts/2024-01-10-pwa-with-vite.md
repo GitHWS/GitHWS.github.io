@@ -235,7 +235,7 @@ export default defineConfig({
 ### 그렇다면 PWA를 로컬에 설치해보자!
 
 > 나는 빌드된 파일을 Vercel을 통해 간단히 배포한 상태였다. <br/>
-> 배포 링크 : https://vue-pomodoro-timer-eight.vercel.app/
+> 배포 링크 : [https://vue-pomodoro-timer-eight.vercel.app/](https://vue-pomodoro-timer-eight.vercel.app/)
 
 Electron으로 설치했었던 혼자 사용했던 데스크톱 앱을 이제 배포한 URL을 통해 로컬에 설치해보자.
 
